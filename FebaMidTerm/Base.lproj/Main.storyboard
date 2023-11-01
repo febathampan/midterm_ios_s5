@@ -36,7 +36,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Find My City">
-                                    <color key="baseForegroundColor" red="0.2470588235" green="0.047058823530000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -51,7 +50,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" red="0.60784313729999995" green="0.85098039219999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="weR-4X-3dB" firstAttribute="top" secondItem="ACQ-sv-j4n" secondAttribute="bottom" constant="150" id="4kz-Pb-9ZO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SeA-Ba-qOZ" secondAttribute="bottom" constant="150" id="60P-rK-c8u"/>
@@ -91,21 +90,55 @@
             </objects>
             <point key="canvasLocation" x="946" y="591"/>
         </scene>
-        <!--Item 1-->
+        <!--Calculator-->
         <scene sceneID="Sag-uW-jnv">
             <objects>
                 <viewController id="qu2-U1-b7O" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="djz-v3-05f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uId-Sc-dCU">
+                                <rect key="frame" x="82" y="510" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="s2f-T9-8TA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Function Scene"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7f-3Q-VlZ">
+                                <rect key="frame" x="0.0" y="48" width="414" height="1578"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Quadraticformula" translatesAutoresizingMaskIntoConstraints="NO" id="CAl-g9-ZY6">
+                                        <rect key="frame" x="96" y="212" width="250" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="6fP-Lr-pvH"/>
+                                            <constraint firstAttribute="width" constant="250" id="bOV-rb-qud"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quadratic Formula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcF-hu-ZsC">
+                                        <rect key="frame" x="186" y="24" width="141" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.66274509800000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Smu-2f-Eia"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uId-Sc-dCU" firstAttribute="centerX" secondItem="djz-v3-05f" secondAttribute="centerX" id="SSO-jJ-pIe"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="vQl-KB-kiH"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" selectedImage="clipboard" catalog="system" id="vQl-KB-kiH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbb-RQ-A8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="946" y="-61"/>
+            <point key="canvasLocation" x="944.92753623188412" y="-61.607142857142854"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cRr-AS-rFw">
@@ -129,15 +162,14 @@
     </scenes>
     <resources>
         <image name="Canada" width="96" height="101"/>
+        <image name="Quadraticformula" width="706" height="551"/>
+        <image name="clipboard" catalog="system" width="103" height="128"/>
         <image name="globe" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
