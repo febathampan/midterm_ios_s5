@@ -8,7 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var counterValue = 0; //variable to hold counter
+    var incrementByVal=1; //increment factor
+    
+    
     @IBOutlet weak var findCityButton: UIButton!
     @IBOutlet weak var cityImage: UIImageView!
     @IBOutlet weak var cityName: UITextField!
@@ -17,8 +20,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var varB: UITextField!
     @IBOutlet weak var varC: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var updateCounter: UILabel!
+    
+    //Lab UI Text Field
+    
+    @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var country: UITextField!
+    @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var summary: UITextView!
+    
+    @IBOutlet weak var responseLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //responseLabel.isHidden = true
     }
 
     @IBAction func findCity(_ sender: Any) {
@@ -76,5 +92,79 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func clearFunction(_ sender: Any) {
+        varA.text = ""
+        varB.text = ""
+        varC.text = ""
+    }
+    
+    
+    @IBAction func doAdd(_ sender: Any) {
+        counterValue+=incrementByVal
+        update()
+    }
+    
+    @IBAction func doSubtract(_ sender: Any) {
+        counterValue-=incrementByVal
+        update()
+    }
+    
+    //Function to update the displayed counter
+    func update(){
+        updateCounter.text="\(counterValue)"
+    }
+    
+    @IBAction func resetCounter(_ sender: Any) {
+        counterValue=0
+        incrementByVal=1;
+        update()
+    }
+    @IBAction func stepBy2(_ sender: Any) {
+        incrementByVal = 2;
+    }
+
+    //Lab 3
+    
+    @IBAction func addUserDetails(_ sender: Any) {
+       // summary.text = ""
+        let fName = firstName.text ?? ""
+               let lName = lastName.text ?? ""
+               let c_country = country.text ?? ""
+               let a_age = age.text ?? ""
+        let userDetails = "First Name: \(fName)\nLast Name: \(lName)\nCountry: \(c_country)\nAge: \(a_age)"
+        summary.text = userDetails + "\n\n"
+        
+    }
+    
+    @IBAction func submitUserDetails(_ sender: Any) {
+        let fName = firstName.text ?? ""
+               let lName = lastName.text ?? ""
+               let c_country = country.text ?? ""
+               let a_age = age.text ?? ""
+
+               // Check if any of the fields are empty
+               if fName.isEmpty || lName.isEmpty || c_country.isEmpty || a_age.isEmpty {
+                   responseLabel.text = "Complete info"
+                   responseLabel.textColor = UIColor.red;
+                   responseLabel.isHidden = false
+               } else {
+                   let userDetails = "First Name: \(fName)\nLast Name: \(lName)\nCountry: \(c_country)\nAge: \(a_age)"
+                   summary.text = userDetails + "\n\n"
+                   responseLabel.text = "Successfully Submitted"
+                   responseLabel.textColor = UIColor.green
+                   responseLabel.isHidden = false
+
+               }    }
+    
+    @IBAction func clearDetails(_ sender: Any) {
+        firstName.text = ""
+        lastName.text = ""
+        age.text = ""
+        country.text = ""
+        summary.text = ""
+        responseLabel.text = ""
+        
+    }
 }
+
 
