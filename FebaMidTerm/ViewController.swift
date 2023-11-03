@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var findCityButton: UIButton!
     @IBOutlet weak var cityImage: UIImageView!
     @IBOutlet weak var cityName: UITextField!
+    @IBOutlet weak var cityLabel: UILabel!
     
     @IBOutlet weak var varA: UITextField!
     @IBOutlet weak var varB: UITextField!
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
 
     @IBAction func findCity(_ sender: Any) {
         if let userInput = cityName.text {
+            cityLabel.text = ""
                 switch userInput.lowercased() {
                 case "calgary":
                     cityImage
@@ -56,6 +58,7 @@ class ViewController: UIViewController {
                 case "winniped":
                     cityImage.image = UIImage(named: "Winnipeg")
                 default:
+                    cityLabel.text = "Not found!"
                     cityImage.image = UIImage(named: "Canada")
                 }
             }    }
