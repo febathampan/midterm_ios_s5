@@ -20,5 +20,113 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "908BEA31-F6C3-4A91-A921-84ECA7638088"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FebaMidTerm/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "908BEA31-F6C3-4A91-A921-84ECA7638088 - 796d48fde2f9666"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FebaMidTerm.ViewController.cityImage.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "FebaMidTerm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user234888/Desktop/iosLabs/Assignment2/FebaMidTerm/FebaMidTerm/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "908BEA31-F6C3-4A91-A921-84ECA7638088 - 74adad2a1f6ee252"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FebaMidTerm.ViewController.cityImage.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "FebaMidTerm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user234888/Desktop/iosLabs/Assignment2/FebaMidTerm/FebaMidTerm/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "908BEA31-F6C3-4A91-A921-84ECA7638088 - 49c1c0e8c202cd61"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FebaMidTerm.ViewController.cityImage.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "FebaMidTerm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user234888/Desktop/iosLabs/Assignment2/FebaMidTerm/FebaMidTerm/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "908BEA31-F6C3-4A91-A921-84ECA7638088 - e7214000a10992cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FebaMidTerm.ViewController.cityImage.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "FebaMidTerm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user234888/Desktop/iosLabs/Assignment2/FebaMidTerm/FebaMidTerm/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "908BEA31-F6C3-4A91-A921-84ECA7638088 - e28ed1cd92f915ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FebaMidTerm.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; FebaMidTerm.ViewController"
+                  moduleName = "FebaMidTerm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user234888/Desktop/iosLabs/Assignment2/FebaMidTerm/FebaMidTerm/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "908BEA31-F6C3-4A91-A921-84ECA7638088 - b50b9957fa7e64d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FebaMidTerm.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;FebaMidTerm.ViewController&gt;"
+                  moduleName = "FebaMidTerm"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user234888/Desktop/iosLabs/Assignment2/FebaMidTerm/FebaMidTerm/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

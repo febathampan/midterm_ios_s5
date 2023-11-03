@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //responseLabel.isHidden = true
+        cityImage.image = UIImage(named: "Canada")        //responseLabel.isHidden = true
     }
 
     @IBAction func findCity(_ sender: Any) {
